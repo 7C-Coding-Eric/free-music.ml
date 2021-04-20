@@ -5,12 +5,11 @@
   
 }, 2000);
 
-// Source: http://pixelscommander.com/en/javascript/javascript-file-download-ignore-content-type/
 window.downloadFile = function (sUrl) {
 
     //iOS devices do not support downloading. We have to inform user about this.
     if (/(iP)/g.test(navigator.userAgent)) {
-       //alert('Your device does not support files downloading. Please try again in desktop browser.');
+       //alert('Your device does not support files downloading. Please try again in desktop browser or Safari.');
        window.open(sUrl, '_blank');
        return false;
     }
